@@ -18,6 +18,15 @@ app.get('/si', function(req, res){
     })
 });
 
+app.get('/sum', function(req, res){
+    const a = parseInt(req.query.a);
+    const b = parseInt(req.query.b);
+
+    const sum = a + b;
+    res.send(sum);
+});
+
+
 app.get('/', function(req, res){
     res.send("SERVER RUNNING")
 });
