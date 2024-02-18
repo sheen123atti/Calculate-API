@@ -18,4 +18,9 @@ app.get('/si', function(req, res){
     })
 });
 
+app.get('/', function(req, res){
+    res.send("SERVER RUNNING")
+});
+
+
 app.listen(3003);
