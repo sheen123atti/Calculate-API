@@ -23,7 +23,7 @@ app.get('/sum', function(req, res){
     const b = parseInt(req.query.b);
 
     const sum = a + b;
-    res.send(sum);
+    res.send(sum.toString());
 });
 
 
